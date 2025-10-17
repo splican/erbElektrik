@@ -2,4 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Platz für Projektspezifische Styles */
+/* Projekt-spezifische Utilities */
+
+@layer components {
+	.in-view {
+		@apply opacity-100;
+		transform: translateY(0);
+	}
+}
+
+@layer utilities {
+	.transition-fade {
+			transition: opacity 500ms ease, transform 500ms ease;
+	}
+
+	.not-in-view {
+			opacity: 0;
+			transform: translateY(24px);
+	}
+}
+
+	/* prefers-reduced-motion */
+	@media (prefers-reduced-motion: reduce) {
+		.transition-fade {
+			transition: none !important;
+		}
+	}
+
+	/* Stagger support via CSS variable */
+	.stagger > * {
+		transition-delay: var(--stagger, 0ms);
+	}
