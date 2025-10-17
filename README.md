@@ -15,13 +15,13 @@ Voraussetzungen
 
 Schnellstart (PowerShell)
 
-1) Abhängigkeiten installieren
+1. Abhängigkeiten installieren
 
 ```powershell
 npm install
 ```
 
-2) Dev-Server mit HMR starten
+2. Dev-Server mit HMR starten
 
 ```powershell
 npm run dev
@@ -29,13 +29,13 @@ npm run dev
 
 Öffne danach `http://localhost:5173` im Browser.
 
-3) Produktions-Build
+3. Produktions-Build
 
 ```powershell
 npm run build
 ```
 
-4) Build lokal ansehen (Preview)
+4. Build lokal ansehen (Preview)
 
 ```powershell
 npm run preview
@@ -70,4 +70,3 @@ Weiteres
 - Wenn du ein Deployment (GitHub Pages / Netlify / Vercel) möchtest, kann ich eine Actions‑ oder Deploy‑Konfiguration hinzufügen.
 
 Viel Erfolg beim Entwickeln — sag Bescheid, wenn ich zusätzlich Deployment oder CI‑Erweiterungen anlegen soll.
-
