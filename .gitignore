@@ -1,0 +1,15 @@
+# Visual Studio / Windows
+*.user
+*.suo
+bin/
+obj/
+*.vs/
+# Node
+node_modules/
+dist/
+# Python
+__pycache__/
+*.pyc
+# Misc
+.DS_Store
+Thumbs.db
